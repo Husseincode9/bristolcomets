@@ -53,3 +53,29 @@ a {
   font-size: 12px;
   border: 1px solid color-mix(in oklab, var(--foreground) 18%, transparent);
 }
+
+/* Custom scrollbar styling to match logo colors */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f172a; /* Navy blue background */
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2dd4bf; /* Turquoise scrollbar */
+  border-radius: 6px;
+  border: 2px solid #0f172a; /* Navy blue border */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #20b2aa; /* Slightly darker turquoise on hover */
+}
+
+/* Firefox scrollbar styling */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #2dd4bf #0f172a; /* thumb track */
+}
